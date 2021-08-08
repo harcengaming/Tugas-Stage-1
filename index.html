@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID19</title>
+
+    <link 
+        rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <script src="./javascript.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            getDataGlobal();
+            getDataIndonesia();
+            getDataCari();
+        })
+        
+    </script>
+</head>
+<body style="text-align: center;">
+    <h1 style="text-align: center;">DASHBOARD ANALYTICS COVID19</h1>
+
+    <!-- <form id="myForm">
+        <input type="text"  id="negara" placeholder="Nama Negara" required>
+        <input type="submit" value="Pencarian">
+    </form> 
+
+    <h2 id="confirmed">Total Confirmed:</h2>
+    <h2 id="recovered">Total Recovered:</h2>
+    <h2 id="deaths">Total Deaths:</h2> -->
+    
+
+    <h2 class="judul">DATA COVID 19 GLOBAL</h2>
+    
+    <div class="data-covid">
+        <div class="red">
+            Positif : <br>
+            <span id="data-positif"></span> <br>
+        </div>
+        <div class="green">
+            Sembuh : <br>
+        <span id="data-sembuh"></span> <br>
+        </div>
+        <div class="ungu">
+            Meninggal : <br>
+        <span id="data-meninggal"></span><br>
+        </div>    
+    </div>
+    
+
+    <h2 class="indonesia">DATA COVID 19 di INDONESIA</h2>
+    
+    <div class="data-covid">
+        <div class="red">
+            Positif : <br>
+            <span id="data-positif2"></span> <br>
+        </div>
+        <div class="green">
+            Sembuh : <br>
+            <span id="data-sembuh2"></span> <br>
+        </div>
+        <div class="ungu">
+            Meninggal : <br>
+            <span id="data-meninggal2"></span><br>
+        </div>
+    </div>
+    
+    
+
+    <h2 class="pencarian">Pencarian negara sembuh</h2>
+
+    <form onsubmit="onclick">
+        <input 
+        type="search"
+        placeholder="Pencarian negara anda"
+        onkeypress=" "
+        class="input-cari"
+        />
+        <button type="submit" id="cari">Cari</button>
+    </form>
+    
+    
+    
+    <h2>Tampilan hasil data negara anda</h2>
+
+    <div class="data-container">
+
+    </div>
+
+    <p class="display-negara">
+
+    </p>
+    <p class="display-negara-sembuh"></p>
+    <p class="display-negara-meninggal"></p>
+
+    
+
+    <table border="10" id="table-cari">
+        
+    </table>
+
+    <footer>
+        <p>Copyright © 2021 Harcen Gaming. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
