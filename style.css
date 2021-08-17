@@ -1,10 +1,68 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+header nav {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    align-content: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration-line: none;
+    background-color: red;
+    color: white;
+    padding: 1%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+input {
+    width: 30ch;
+}
+
+button {
+    color: white;
+    background-color: red;
+    width: 10%;
+}
+      
+#kotak {
+    /* border: solid; */
+    margin-top: 30px;
+    padding: 35px 0px 35px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gambar */
+    background-image: url('./corona.jpg');
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    /* border: 1px solid red; */
+}
+
+article {
+    /* gambar */
+    background-image: url('./corona2.jpg');
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    /* border: 1px solid red; */
 }
 
 .data-covid {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px 0px 10px 0px;
     color: white;
@@ -13,50 +71,62 @@ body {
 .red {
     background-color: red;
     padding: 20px 60px 20px 60px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .green {
     background-color: green;
     padding: 20px 60px 20px 60px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .ungu {
     background-color: purple;
     padding: 20px 60px 20px 60px;
+    border-radius: 10px 10px 10px 10px;
 }
 
-table {
+/* table {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: rebeccapurple;
     color: white;
     border: solid black;
-}
+} */
 
 th {
     padding: 0px 30px 0 30px;
+}
+
+.indonesia {
+    margin-top: 90px;
+    background-color:yellow;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px 0px 15px 0px;
+}
+
+.judul {
+    color: black;
+    background-color:yellow;
+    border-radius: 10px 10px 10px 10px;
+    padding: 15px 0px 15px 0px;
+}
+
+.pencarian {
+    margin-top: 90px;
+    padding: 15px 0px 15px 0px;
+}
+
+.hasil {
+    margin-top: 50px;
+    padding: 15px 0px 15px 0px;
 }
 
 footer {
     display: block;
     padding: 2%;
     background-color: red;
-    color: black;
+    color: white;
+    text-align: center;
 }
-
-h2 {
-    padding: 15px 0px 15px 0px;
-}
-
-h1 {
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
- .indonesia {
-    padding-top: 90px;
- }
-
- .pencarian {
-    padding-top: 90px;
- }

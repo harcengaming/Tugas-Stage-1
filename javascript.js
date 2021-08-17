@@ -41,52 +41,62 @@ function getDataIndonesia() {
 }
 
 //=============Cari===============
-function getDataCari() {
+// function getDataCari() {
 
-    let dataCari = "<tr><th>Negara</th><th>Positif</th><th>Sembuh</th><th>Meninggal</th></tr>";
+//     let dataCari = document.querySelector("cari");
+//     if(submit){
+//             submit.addEventListener("click", swapper, false);
+//         }
 
-
-    fetch('https://covid-19.mathdro.id/api/confirmed')
-    .then(response2 => response2.json())
-    .then(data2 => {
-        console.log(data2)
-        data2.forEach(function(item) {
-            dataCari += '<tr>'
-            dataCari += '<td>'+  item.countryRegion + '</td>'
-            dataCari += '<td>'+  item.confirmed  + '</td>'
-            dataCari += '<td>'+  item.recovered  + '</td>'
-            dataCari += '<td>'+  item.deaths  + '</td>'
-            dataCari += '</tr>'
-
-            // document.getElementById(".data-container").innerHTML = `${response2[0].item.uid.value}`
-          
-        })
-
-        document.getElementById("table-cari").innerHTML += dataCari
-        // document.getElementById("table-cari").innerHTML += `${response2.deaths}`
-
-        // document.querySelector(".display-negara").innerHTML = dataCari += '<td>'+ confirmed.countryRegion + '</td>'
-        // document.querySelector(".display-negara-sembuh").innerHTML = `${confirmed.recovered}`
-        // document.querySelector(".display-negara-meninggal").innerHTML = `${confirmed[0].deaths}`
+//     let cari = document.getElementById("cari-input");
+//     console.log(cari);
         
-    })
-    .catch(err2 => {
-        console.log(err2)
-    });
-}
+
+
+//     fetch('https://covid-19.mathdro.id/api/confirmed')
+//     .then(response2 => response2.json())
+//     .then(data2 => {
+//         console.log(data2)
+
+//         data2.forEach(function(item) {
+//             `<div class="negara">
+
+//                 <h2 class="judul"> Negara : ${item.countryRegion.value}</h2>
+
+//                 <div class="data-covid"> 
+
+//                     <div class="kolom">
+//                         <div class="red"> 
+//                         <div class="cardheading"> 
+//                             Positif : <br>
+//                             <span> ${item.confirmed} </span> <br>
+//                         </div></div>
+//                     </div>
+            
+//                     <div class="kolom">
+//                         <div class="green"> 
+//                             Sembuh : <br>
+//                             <span> ${item.recovered} </span>
+//                         </div>
+//                     </div>
+            
+//                     <div class= "kolom">
+//                         <div class="ungu"> 
+//                             Meninggal : <br>
+//                             <span> ${item.deaths} </span>
+//                         </div>
+//                     </div>       
+//                 </div>
+//             </div>`;
+//             // document.getElementById(".data-container").innerHTML = `${response2[0].item.uid.value}`
+          
+//         })
+
+//         document.getElementById("data-container").innerHTML = dataCari
+//     })
+//     .catch(err2 => {
+//         console.log(err2)
+//     });
+// }
 
 //=============cari==============
-// const searchCountry = () => {
-//     search = document.querySelector(".input-cari").dataCari;
-//     console.log(" ", search);
-
-//     document.querySelector(".display-negara").innerHTML = search;
-
-//     fetch(`https://covid-19.mathdro.id/api/confirmed/${search}`)
-//     .then((response2) => response2.json())
-//     .then((data2) =>  (document.querySelector(".display-negara-sembuh").innerHTML = data2.recovered.value)
-    
-//     );
-// };
-
-// searchCountry();

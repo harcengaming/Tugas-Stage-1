@@ -19,88 +19,76 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    
     <header>
         <nav>
             <h2>DASHBOARD ANALYTICS COVID19</h2>
-            <a href="./halaman2.html">Cari Data Negara di Dunia</a>
+            <a href="./index.html">Beranda</a>
         </nav>
     </header>
 
-    <!-- <form id="myForm">
-        <input type="text"  id="negara" placeholder="Nama Negara" required>
-        <input type="submit" value="Pencarian">
-    </form> 
+    <article style="text-align: center;">
+        <h2 class="pencarian">Pencarian Negara Sembuh</h2>
 
-    <h2 id="confirmed">Total Confirmed:</h2>
-    <h2 id="recovered">Total Recovered:</h2>
-    <h2 id="deaths">Total Deaths:</h2> -->
-    
-    <div id="kotak">
-        <!-- <img src="./corona.jpeg" /> -->
+        <form id="input-cari">
+            <input 
+            type="text"
+            placeholder="Pencarian negara anda"
+            class="cari-data"
+            id="cari-input"
+            />
+            <button type="submit" id="cari">Cari</button>
+        </form>
 
-        <section style="text-align: center;">
-            <h2 class="judul">DATA COVID 19 GLOBAL</h2>
+        <h2 class="hasil">Tampilan hasil data negara anda</h2>
+
+        <div id="data-container">
+
+        </div>
+
+        <div class="gagal-kontainer">
+
+        </div>
+
+        <p class="display-negara">
+
+        </p>
+        <p class="display-negara-positif"></p>
+        <p class="display-negara-sembuh"></p>
+        <p class="display-negara-meninggal"></p>
+    </article>
+
+    <table border="10" id="table-cari">
         
-            <div class="data-covid">
-                <div class="red">
-                    Positif : <br>
-                    <span id="data-positif"></span> <br>
-                </div>
-                <div class="green">
-                    Sembuh : <br>
-                <span id="data-sembuh"></span> <br>
-                </div>
-                <div class="ungu">
-                    Meninggal : <br>
-                <span id="data-meninggal"></span><br>
-                </div>    
-            </div>
-        </section>
-        
-        <section style="text-align: center;">
-            <h2 class="indonesia">DATA COVID 19 di INDONESIA</h2>
-        
-            <div class="data-covid">
-                <div class="red">
-                    Positif : <br>
-                    <span id="data-positif2"></span> <br>
-                </div>
-                <div class="green">
-                    Sembuh : <br>
-                    <span id="data-sembuh2"></span> <br>
-                </div>
-                <div class="ungu">
-                    Meninggal : <br>
-                    <span id="data-meninggal2"></span><br>
-                </div>
-            </div>
-        </section>
-    </div>
-    
+    </table>
+
+    <section>
+
+    </section>
 
     <footer>
         <p>Copyright © 2021 Harcen Gaming. All Rights Reserved.</p>
     </footer>
 
     <!-- Biasanya JS sebelum penutup body -->
+    <script src="./javascript.js"></script>
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             getDataGlobal();
             getDataIndonesia();
+            // getDataCari();
         })   
     </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script 
+    <!-- <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
         crossorigin="anonymous">
-    </script>
+    </script> -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+    
     <script 
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" 
         integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" 
@@ -111,7 +99,6 @@
         integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" 
         crossorigin="anonymous">
     </script>
-    -->
-    <script src="./javascript.js"></script>
+   
 </body>
 </html>
