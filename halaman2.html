@@ -27,25 +27,30 @@
     </header>
 
     <article style="text-align: center;">
-        <h2 class="pencarian">Pencarian Negara Sembuh</h2>
+        <section class="gambar">
+            <h2 class="pencarian">Pencarian Negara Sembuh</h2>
 
-        <form id="input-cari">
-            <input 
-            type="text"
-            placeholder="Pencarian negara anda"
-            class="cari-data"
-            id="cari-input"
-            />
-            <button type="submit" id="cari">Cari</button>
-        </form>
+            <form id="input-cari">
+                <input 
+                type="text"
+                placeholder="Pencarian negara anda"
+                id="cari-input"
+                />
+                <button type="submit" id="cari-kotak">Cari</button>
+            </form>
 
-        <h2 class="hasil">Tampilan hasil data negara anda</h2>
+            <h2 class="hasil">Tampilan hasil data negara anda</h2>
+        </section>
+        
 
-        <div id="data-container">
+        
+        <section class="tengah">
+            <div id="data-container">
+                <table width="600px" rules="all" id="table" ></table>
+            </div>
+        </section>
 
-        </div>
-
-        <div class="gagal-kontainer">
+        <div class="data-semua">
 
         </div>
 
@@ -57,13 +62,6 @@
         <p class="display-negara-meninggal"></p>
     </article>
 
-    <table border="10" id="table-cari">
-        
-    </table>
-
-    <section>
-
-    </section>
 
     <footer>
         <p>Copyright © 2021 Harcen Gaming. All Rights Reserved.</p>
@@ -73,11 +71,16 @@
     <script src="./javascript.js"></script>
 
     <script>
+        let button = document.querySelector("cari-kotak");
+        let search = document.getElementById("cari-input").value;
+            console.log(search);
+
         document.addEventListener("DOMContentLoaded", function() {
             getDataGlobal();
             getDataIndonesia();
-            // getDataCari();
+            getDataNegara();
         })   
+        
     </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

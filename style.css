@@ -52,7 +52,7 @@ button {
     /* border: 1px solid red; */
 }
 
-article {
+.gambar {
     /* gambar */
     background-image: url('./corona2.jpg');
     width: 100%;
@@ -98,7 +98,15 @@ article {
 } */
 
 th {
-    padding: 0px 30px 0 30px;
+    padding: 0px 70px 0px 70px;
+}
+
+td {
+    text-align: center;
+}
+
+#text-left {
+    text-align: left;
 }
 
 .indonesia {
@@ -124,6 +132,16 @@ th {
     margin-top: 50px;
     padding: 15px 0px 15px 0px;
 }
+
+.tengah {
+    text-align: left;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: large;
+}
+
 
 footer {
     display: block;
